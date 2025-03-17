@@ -1,0 +1,12 @@
+<form action="{% url 'payment' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="amount">Amount:</label>
+    <input type="number" name="amount" placeholder="Enter your amount">
+    <br>
+    <br>
+    <button>Pay</button>
+    
+
+</form>
+
+
